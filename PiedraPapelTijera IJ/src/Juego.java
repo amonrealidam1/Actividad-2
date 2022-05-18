@@ -32,31 +32,37 @@ public class Juego
             {
                 System.out.println("Jugador 2 GANA");
                 exitosJugador2 = p2.getExitos() + 1;
+                p2.setExitos();
                 
             }
             else if((opcionJugador1.equals("papel"))&&(opcionJugador2.equals("piedra")))
             {
                 exitosJugador1 = p1.getExitos() + 1;
+                p1.setExitos();
                 System.out.println("Jugador 1 GANA");
             }
             else if((opcionJugador1.equals("piedra"))&&(opcionJugador2.equals("tijeras")))
             {
                 exitosJugador1 = p1.getExitos() + 1;
+                p1.setExitos();
                 System.out.println("Jugador 1 GANA");
             }
             else if((opcionJugador1.equals("tijeras"))&&(opcionJugador2.equals("piedra")))
             {
                 exitosJugador2 = p2.getExitos() + 1;
+                p2.setExitos();
                 System.out.println("Jugador 2 GANA");
             }
             else if((opcionJugador1.equals("tijeras"))&&(opcionJugador2.equals("papel")))
             {
                 exitosJugador1 = p1.getExitos() + 1;
+                p1.setExitos();
                 System.out.println("Jugador 1 GANA");
             }
             else if((opcionJugador1.equals("papel"))&&(opcionJugador2.equals("tijeras")))
             {
                 exitosJugador2 = p2.getExitos() + 1;
+                p2.setExitos();
                 System.out.println("Jugador 2 GANA");
             }
             if(opcionJugador1==opcionJugador2)
@@ -71,7 +77,7 @@ public class Juego
                 System.out.println("FIN DEL JUEGO!!");
             }
             System.out.println();
-        } while(finJuego!=true);
+        } while(!finJuego);
     }
 }
 /**
