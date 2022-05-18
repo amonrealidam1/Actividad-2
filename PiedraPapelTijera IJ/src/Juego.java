@@ -65,7 +65,7 @@ public class Juego
                 p2.setExitos();
                 System.out.println("Jugador 2 GANA");
             }
-            if(opcionJugador1==opcionJugador2)
+            if(opcionJugador1.equals(opcionJugador2))
             {
                 empates++;
                 System.out.println("\n\t\t\t Empate \n");
@@ -90,7 +90,7 @@ class Jugador{
      */
     public String opcionAlAzar()
     {
-        String opcion="";
+        String opcion;
         int c = (int)(Math.random()*3);
         switch(c){
             case 0:
