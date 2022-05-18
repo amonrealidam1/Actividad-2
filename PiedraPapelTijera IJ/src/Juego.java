@@ -11,7 +11,7 @@ public class Juego
     {
         Jugador p1=new Jugador();
         Jugador p2=new Jugador();
-        boolean finJuego;
+        boolean finJuego = false;
         int rondasJugadas = 0;    // Número de rondas jugadas
         int exitosJugador1=p1.getExitos();
         int exitosJugador2=p2.getExitos();
